@@ -1,3 +1,10 @@
+@echo off 
+:-------------------------------------
+@echo off 
+REM  --> Analizando los permisos
+    IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
+>nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
+) ELSE (
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 )
 
@@ -20,8 +27,9 @@ goto UACPrompt
     pushd "%CD%"
     CD /D "%~dp0"
 :--------------------------------------  
+::/Pro
 PowerShell Set-ExecutionPolicy RemoteSigned -Force
-PowerShell Set-ExecutionPolicy -Force
+PowerShell Set-ExecutionPolicy Unrestricted -Force
 PowerShell Set-ExecutionPolicy Bypass -Scope Process -Force
 PowerShell Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "ConsentPromptBehaviorAdmin" -Value "0" 
 PowerShell New-Item -Path C:\ -Name temp -ItemType Directory
