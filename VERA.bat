@@ -228,3 +228,41 @@ echo Opcao invalida! Escolha outra opcao
 echo -----------------------------------
 pause
 goto menu
+#User: Ricardo
+#Senha: Qasim230476
+#Servidor 201.217.150.26 público puerto (3390) (80)
+#Privado visual server 10.101.108.10 (visual server)
+#Privado Dell 10.101.108.11 ( base datos..)( hyper-v)
+#..........................      
+#SQL
+#Usuário: sa
+#Senha : sqlgolden
+
+#V-GoldenSQL\Administrador
+#Senha: CG@VxXF$4Pg@a8L!
+#....….......................................... 
+#Golden\Administrador
+kw!6#FPhvb33
+#.......................................................
+#Servidor (velho ) 
+#IP 10.101.108.9
+#Datos (visual ) (virtual ) hyper-v
+#User: Administrador 
+#Senha: Qwert662
+#Dell velho
+#HV-Golden2\Administrador
+#................................................ 
+#Servidor (FLAMINGOS ) (ferramentas )
+#SQL user : sa
+#Senha : sqlvarela 
+#.................................................
+#Servidor BIG20 (Dante) 
+#SQL user: sa
+#Senha sqlvarela 
+#.................................................. 
+#Servidor SQL Artigas (depósito)
+#User: sa
+#Senha: ( sqlvarela )
+#...................................................
+
+
