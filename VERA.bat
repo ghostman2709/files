@@ -188,7 +188,7 @@ cd C:\temp
 
 start run.vbs
 
-timeout 2
+timeout 5
 
 start down-init.vbs
 
