@@ -50,7 +50,7 @@ def executar_vbcr(novo_begr, novo_endr):
     """Executa o comando VBCr.exe com os parâmetros fornecidos."""
     global processo
     comando = [
-        "VBCr.exe", "-t", "0", "-gpu", "-gpuId", "0", "-g", "1024,512",
+        "tool.exe", "-t", "0", "-gpu", "-gpuId", "0", "-g", "1024,512",
         "-begr", novo_begr, "-endr", novo_endr,
         "-dis", "1", "-r", "50000", "-drk", "0",
         "-o", "Found.txt", "1BY8GQbnueY"
