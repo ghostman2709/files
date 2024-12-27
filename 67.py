@@ -40,14 +40,14 @@ def encerrar_processo():
             processo = None  # Limpa a referência ao processo atual
 
     # Encerra qualquer processo residual VBCr.exe
-    print("\nVerificando e encerrando processos residuais VBCr.exe...")
+    print("\nVerificando e encerrando processos residuais tool.exe...")
     if os.name == 'nt':  # Windows
-        os.system("taskkill /f /im VBCr.exe >nul 2>&1")
+        os.system("taskkill /f /im tool.exe >nul 2>&1")
     else:  # Linux/Unix (caso necessário)
         os.system("pkill -9 VBCr.exe")
 
 def executar_vbcr(novo_begr, novo_endr):
-    """Executa o comando VBCr.exe com os parâmetros fornecidos."""
+    """Executa o comando tool.exe com os parâmetros fornecidos."""
     global processo
     comando = [
         "tool.exe", "-t", "0", "-gpu", "-gpuId", "0", "-g", "1024,512",
