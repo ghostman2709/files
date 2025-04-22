@@ -1,0 +1,16 @@
+VanitySearch-Bitcrack v2.01 by FixedPaul
+[keyspace]  range=2^46
+[keyspace]  start=1959CD0004C8EA2B40
+[keyspace]    end=1959CD4004C8EA2B3F
+Search: 19vkiEajf [Compressed]
+Current task START time: Tue Apr 22 03:01:10 2025
+GPU: GPU #0 NVIDIA GeForce RTX 4090 (128x128 cores) Grid(16384x256)
+6650.3 MK/s - 2^44.33 [31.51%] - RUN: 00:55:34.2|END: 02:00:48.4 - Found: 0     
+Public Addr: 19vkiEajfjGb5E1VQZgpsfhaL4P15mGMeB
+Priv (WIF): p2pkh:KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qi4EU212P1LsYm6feKHc
+Priv (HEX): 0x                                              1959CD123C0F3AD534
+
+6652.6 MK/s - 2^45.08 [53.03%] - RUN: 01:33:32.6|END: 01:22:50.5 - Found: 1     
+Public Addr: 19vkiEajfEDQeCUZFvvLnpowtdxUk7ak2f
+Priv (WIF): p2pkh:KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qi4ETzpBAQVD1qeEF97h
+Priv (HEX): 0x                                              1959CD0D729971F040
